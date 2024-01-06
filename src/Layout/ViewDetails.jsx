@@ -23,13 +23,16 @@ const ViewDetails = () => {
 
     toast.success("Add to my Assainemt");
 
-    fetch("https://assainment-server.vercel.app/my-assainments", {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(formAllValue),
-    });
+    fetch(
+      "https://b8a11-server-side-mdimranhossainwd-master-jn8bazyv9.vercel.app/",
+      {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(formAllValue),
+      }
+    );
   };
 
   return (

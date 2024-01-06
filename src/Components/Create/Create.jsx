@@ -17,7 +17,7 @@ const Create = () => {
 
     try {
       const response = await axios.post(
-        "https://assainment-server.vercel.app/my-assainments",
+        "https://b8a11-server-side-mdimranhossainwd-master-jn8bazyv9.vercel.app/",
         formAllValue,
         {
           headers: {
