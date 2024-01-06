@@ -5,7 +5,9 @@ import AssainmentsCard from "../Components/Page/AssainmentsCard";
 const AllAssainment = () => {
   const [itemData, setIsData] = useState([]);
   useEffect(() => {
-    fetch("https://assainment-server.vercel.app/assainment-collections")
+    fetch(
+      "https://b8a11-server-side-mdimranhossainwd-master-jn8bazyv9.vercel.app/assainment-collections"
+    )
       .then((res) => res.json())
       .then((data) => setIsData(data));
   }, []);

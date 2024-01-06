@@ -18,13 +18,16 @@ const UpdateForm = () => {
 
     const formAllValue = { name, marks, img, select, email, date, details };
 
-    fetch(`https://assainment-server.vercel.app/createassainment/${_id}`, {
-      method: "PUT",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(formAllValue),
-    })
+    fetch(
+      `https://b8a11-server-side-mdimranhossainwd-master-jn8bazyv9.vercel.app/createassainment/${_id}`,
+      {
+        method: "PUT",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(formAllValue),
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

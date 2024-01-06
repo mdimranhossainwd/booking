@@ -26,7 +26,7 @@ const router = createBrowserRouter([
         element: <UpdateForm />,
         loader: ({ params }) =>
           fetch(
-            `https://assainment-server.vercel.app/createassainment/${params.id}`
+            `https://b8a11-server-side-mdimranhossainwd-master-jn8bazyv9.vercel.app/createassainment/${params.id}`
           ),
       },
       {
@@ -37,7 +37,9 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: () =>
-          fetch("https://assainment-server.vercel.app/myassainments"),
+          fetch(
+            "https://b8a11-server-side-mdimranhossainwd-master-jn8bazyv9.vercel.app/myassainments"
+          ),
       },
       {
         path: "/viewdetails/:id",
@@ -48,7 +50,7 @@ const router = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(
-            `https://assainment-server.vercel.app/createassainment/${params.id}`
+            `https://b8a11-server-side-mdimranhossainwd-master-jn8bazyv9.vercel.app/createassainment/${params.id}`
           ),
       },
 

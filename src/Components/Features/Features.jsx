@@ -5,7 +5,9 @@ const Features = () => {
   const [items, setItems] = useState();
 
   useEffect(() => {
-    fetch("https://assainment-server.vercel.app/features")
+    fetch(
+      "https://b8a11-server-side-mdimranhossainwd-master-jn8bazyv9.vercel.app/features"
+    )
       .then((res) => res.json())
       .then((data) => setItems(data));
   }, []);

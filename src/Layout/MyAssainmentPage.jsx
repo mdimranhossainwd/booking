@@ -13,9 +13,12 @@ const MyAssainmentPage = () => {
   const handleDelete = (_id) => {
     console.log("Delete This Items ", _id);
     toast.success("Delete Successfully");
-    fetch(`https://assainment-server.vercel.app/myassainments/${_id}`, {
-      method: "DELETE",
-    })
+    fetch(
+      `https://b8a11-server-side-mdimranhossainwd-master-jn8bazyv9.vercel.app/myassainments/${_id}`,
+      {
+        method: "DELETE",
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

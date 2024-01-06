@@ -24,7 +24,7 @@ const ViewDetails = () => {
     toast.success("Add to my Assainemt");
 
     fetch(
-      "https://b8a11-server-side-mdimranhossainwd-master-jn8bazyv9.vercel.app/",
+      "https://b8a11-server-side-mdimranhossainwd-master-jn8bazyv9.vercel.app",
       {
         method: "POST",
         headers: {
